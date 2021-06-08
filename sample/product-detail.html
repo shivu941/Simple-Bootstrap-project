@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Products</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+    <header class="section-header">
+        <section class="header-main border-bottom">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-sm-4 col-md-4 col-5"> <a href="#" class="brand-wrap" data-abc="true">
+                            <img class="logo" src="../sample/img/logo.png">
+                        </a> </div>
+                    <div class="col-lg-4 col-xl-4 col-sm-8 col-md-4 d-none d-md-block">
+                        <form action="#" class="search-wrap">
+                            <div class="input-group w-100"> <input type="text" class="form-control search-form"
+                                    style="width:55%;" placeholder="Search">
+                                <div class="input-group-append"> <button class="btn btn-primary search-button"
+                                        type="submit"> <i class="fa fa-search"></i> </button> </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 col-sm-8 col-md-4 col-7">
+                        <div class="d-flex justify-content-end">
+                            <div class="dropdown btn-group"> <a class="nav-link nav-icons" href="#"
+                                    id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false" data-abc="true"><i class="fa fa-shopping-cart"></i></a>
+
+                            </div> <span class="vl"></span> <a class="nav-link nav-user-img" href="#"
+                                data-toggle="modal" data-target="#login-modal" data-abc="true"><span
+                                    class="login">LOGIN</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar navbar-expand-md navbar-main border-bottom">
+            <div class="container-fluid">
+                <form class="d-md-none my-2">
+                    <div class="input-group"> <input type="search" name="search" class="form-control"
+                            placeholder="Search" required="">
+                        <div class="input-group-append"> <button type="submit" class="btn btn-secondary"> <i
+                                    class="fa fa-search"></i> </button> </div>
+                    </div>
+                </form> <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#dropdown6" aria-expanded="false"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="navbar-collapse collapse" id="dropdown6" style="">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href=""
+                                data-toggle="dropdown" data-abc="true" aria-expanded="false">Women</a>
+                            <div class="dropdown-menu"> <a class="dropdown-item" href="" data-abc="true">Clogs</a> <a
+                                    class="dropdown-item" href="" data-abc="true">Flip Flops</a> <a
+                                    class="dropdown-item" href="" data-abc="true">Sandals</a> <a class="dropdown-item"
+                                    href="" data-abc="true">Sneakers</a> </div>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="" data-abc="true">New Arrivals</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="" data-abc="true">Sales</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="" data-abc="true">Blog</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="" data-abc="true">Support</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div
+            class="main-container d-flex flex-lg-row align-items-lg-start justify-content-lg-center flex-md-column align-items-md-start justify-content-md-start flex-sm-column align-items-sm-center justify-content-sm-center">
+            <div
+                class="left-main-container container-fluid d-md-flex flex-md-column align-items-md-center d-sm-flex flex-sm-column align-items-sm-center justify-content-sm-center">
+                <div class="row">
+                    <div class="img-col-1 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <img onclick="getSrc(this.src)" src="img/brown/prod2.jpg" alt="">
+                        <img onclick="getSrc(this.src)" src="img/brown/prod3.jpg" alt="">
+                        <img onclick="getSrc(this.src)" src="img/brown/prod4.jpg" alt="">
+                        <img onclick="getSrc(this.src)" src="img/brown/prod5.jpg" alt="">
+                    </div>
+                    <div class="img-col-2 col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                        <img id="prodImg" src="img/brown/prod1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right-main-container">
+                <h1 class="h1-heading">Crocs</h1>
+                <h2 class="subheading">Women Brown Colid Cleo</h2>
+
+                <p class="price">$165.00 </p>
+
+                <div class="radio-container flex-row justify-content-between">
+                    <p class="sec-heading ">COLOR <span>WHITE</span></p>
+                    <label>
+                        <input type="radio" name="key" value="brown" checked />
+                        <span onclick="changeColor(this.className)" class="brown"></span>
+                    </label>
+                    <label>
+                        <input type="radio" name="key" value="silver" />
+                        <span onclick="changeColor(this.className)" class="silver"></span>
+                    </label>
+                    <label>
+                        <input type="radio" name="key" value="black" />
+                        <span onclick="changeColor(this.className)" class="black"></span>
+                    </label>
+                </div>
+
+                <div class="select-container  flex-row justify-content-between">
+                    <div class="select-size">
+                        <p class="sec-heading ">SIZE <a href="#"><span>Size Guide</span></a></p>
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-dark">XXS</button>
+                            <button type="button" class="btn btn-outline-dark">XS</button>
+                            <button type="button" class="btn btn-outline-dark">S</button>
+                            <button type="button" class="btn btn-outline-dark">M</button>
+                            <button type="button" class="btn btn-outline-dark">L</button>
+                        </div>
+                    </div>
+                    <div class="select-quantity">
+                        <p class="sec-heading ">QUANTITY</p>
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="justify-content-between align-items-center">
+                    <a href="#">
+                        <button type="button" class="shopping cart-button btn-default" aria-label="cart button">
+                            ADD TO BAG
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <section class="product-list-sec">
+            <h1 class="h1-heading">WE THINK YOU WILL LOVE</h1>
+            <div class="prod-list">
+
+                <div class="d-flex flex-column">
+                    <div class="">
+                        <a href="../sample/product-detail.html">
+                            <div class="card"> <img class="card-img-top" src="img/brown/product2.png">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <div class="h6 font-weight-bold">Crocs</div>
+                                            <div class="d-flex">
+                                                <div class="text-muted" style="padding-right: 15px">
+                                                    RS.990</div>
+                                                <del>Rs.1200</del><span class="offer">(60%Off)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="btn"><span class="far fa-heart"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="../sample/product-detail.html">
+                            <div class="card"> <img class="card-img-top" src="img/brown/product2.png">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <div class="h6 font-weight-bold">Crocs</div>
+                                            <div class="d-flex">
+                                                <div class="text-muted" style="padding-right: 15px">
+                                                    RS.990</div>
+                                                <del>Rs.1200</del><span class="offer">(60%Off)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="btn"><span class="far fa-heart"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-10">
+                    <a href="../sample/product-detail.html">
+                        <div class="card"> <img class="card-img-top" src="img/brown/prod1.jpg">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div class="d-flex flex-column">
+                                        <h2 class="h1-heading">Crocs</h2>
+                                        <h2 class="subheading">Women White Colid Cleo</h2>
+                                    </div>
+                                    <div class="btn"><span class="far fa-heart"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+                <div class="d-flex flex-column">
+                    <div class="">
+                        <a href="../sample/product-detail.html">
+                            <div class="card"> <img class="card-img-top" src="img/brown/product2.png">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <div class="h6 font-weight-bold">Crocs</div>
+                                            <div class="d-flex">
+                                                <div class="text-muted" style="padding-right: 15px">
+                                                    RS.990</div>
+                                                <del>Rs.1200</del><span class="offer">(60%Off)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="btn"><span class="far fa-heart"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="../sample/product-detail.html">
+                            <div class="card"> <img class="card-img-top" src="img/brown/product2.png">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <div class="d-flex flex-column">
+                                            <div class="h6 font-weight-bold">Crocs</div>
+                                            <div class="d-flex">
+                                                <div class="text-muted" style="padding-right: 15px">
+                                                    RS.990</div>
+                                                <del>Rs.1200</del><span class="offer">(60%Off)</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="btn"><span class="far fa-heart"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer font-small elegant-color">
+
+        <div class="color-primary">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-7 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Get connected with us on social networks!</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-5 text-center text-md-right">
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-multi-links">
+            <div class="container text-center text-md-left pt-4 pt-md-5">
+
+                <div class="row mt-1 mt-md-0 mb-4 mb-md-0">
+
+                    <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+
+                        <h5>COMPANY</h5>
+                        <hr class="color-primary mb-4 mt-0   mx-auto w-60">
+
+                        <ul class="list-unstyled foot-desc">
+                            <li class="mb-2">
+                                <a href="#!">About Crocs</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!">Store Locator</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!">Bulk Inquiries</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!">Compliance Information</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+
+                        <h5>SHOP CROCS</h5>
+                        <hr class="color-primary mb-4 mt-0   mx-auto w-60">
+
+                        <ul class="list-unstyled foot-desc">
+                            <li class="mb-2">
+                                <a href="#!">Women</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!">Men</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!">Girls</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!">Boys</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+
+                        <h5>Your Account</h5>
+                        <hr class="color-primary mb-4 mt-0   mx-auto w-60">
+
+                        <ul class="list-unstyled foot-desc">
+                            <li class="mb-2">
+                                <a href="#!">Order Status</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!">Sign In / Sign Up</a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#!">Newsletter</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+
+                        <h5>Contacts</h5>
+                        <hr class="color-primary mb-4 mt-0   mx-auto w-60">
+
+                        <ul class="fa-ul foot-desc ml-4">
+                            <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>Bengaluru
+                            </li>
+                            <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>123 456 7890
+                            </li>
+                            <li class="mb-2"><span class="fa-li"><i
+                                        class="far fa-envelope"></i></span>company@example.com
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3">© 2021 Copyright </div>
+
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
